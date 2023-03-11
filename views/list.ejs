@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My To-do-list</title>
+</head>
+
+<body>
+    
+    <!-- 4. kindofday is just one otem so it will post it on user side go forward -->
+    <div class="box" id="heading">
+        <h1> It's <%= listTitle %>
+        </h1>
+    </div>
+    <div class="items">
+        <!-- 4. it wiill get newlistitem for app.get holding array "items" so it will process one by one show it o screen of user -->
+        <% for(var i=0;i<newlistitems.length;i++){ %>
+            <div class="item">
+                <input type="checkbox" name="check" id="checkid">
+                <p>
+                    <%= newlistitems[i] %>
+                </p>
+            </div>
+
+            <%}%>
+            <!--  1. form post method will direct the material to app.post in app.js file  -->
+            <form class="item" action="/" method="post">
+
+                <input type="text" placeholder="add new item" name="additem" autocomplete="off">
+                <button type="submit" name="btn" value="<%= listTitle %>">+</button>
+            </form>
+
+                
+    </div>
+
+    <footer>
+        <p> CopyRight ZIT  2023 Todolist </p>
+    </footer>
+
+</body>
+
+</html>

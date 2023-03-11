@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Lobster+Two:ital,wght@0,700;1,400&family=Montserrat:ital,wght@1,800&family=Nunito:wght@500&family=Ubuntu&display=swap');
+html {
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    /* color: #fff; */
+    
+    padding: 20px;
+}
+
+.box {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #A683E3;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgb(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+.items{
+    background-color: white;
+    
+    max-width: 600px;
+    
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgb(0, 0, 0, 0.3);
+    
+    
+}
+/* .item{
+    padding: 30px;
+    border-bottom: 2px solid #000;
+    margin:0 5%;
+    
+} */
+.item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 228, 228);
+    
+    margin: 0 8%;
+    height: 130px;
+
+    
+}
+.item:last-child{
+    border-bottom: none;
+}
+input[type="checkbox"]{
+    margin: 40px;
+    padding: 100px;
+    width: 24px;
+    height: 24px;
+
+
+}
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+   
+}
+
+p{
+    margin: 0;
+    padding:10px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #00204a;
+    
+}
+
+form{
+    text-align: center;
+    margin-left:20px;
+}
+button{
+    min-height: 50px;
+    width: 100px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 40px;
+    
+    text-align: center;
+    
+    border-width: 0;
+}
+
+.pagebtn:hover{
+    color: rgb(196, 193, 193);
+
+}
+input[type="text"]{
+    font-size: 30px;
+    
+    text-align: center;
+    border-width: 0;
+    
+    height: 60px;
+    width: 380px;
+    
+    border:0px;
+    outline: none;
+    border-bottom: 1px solid rgb(230, 228, 228);
+    
+}
+input:focus{
+    background-color: whitesmoke;
+
+}
+::placeholder{
+    color: grey;
+    opacity: 1;
+}
+footer{
+    text-align: center;
+}
